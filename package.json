@@ -1,0 +1,8 @@
+{
+   "name":"frontend-tools",
+   "version":"0.0.1",
+   "dependencies": {
+      "handlebars": "~3.0.3"
+   },
+   "devDependencies": {}
+}

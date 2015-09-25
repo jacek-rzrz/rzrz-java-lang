@@ -44,6 +44,48 @@ public final class Tuples {
 			return new Tuple4($1, $2, $3, $4);
 		}
 
+		/**
+		 * Factory method for creating Tuple5 instances.
+		 */
+		static <T1, T2, T3, T4, T5> Tuple5<T1, T2, T3, T4, T5> of(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5) {
+			return new Tuple5($1, $2, $3, $4, $5);
+		}
+
+		/**
+		 * Factory method for creating Tuple6 instances.
+		 */
+		static <T1, T2, T3, T4, T5, T6> Tuple6<T1, T2, T3, T4, T5, T6> of(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6) {
+			return new Tuple6($1, $2, $3, $4, $5, $6);
+		}
+
+		/**
+		 * Factory method for creating Tuple7 instances.
+		 */
+		static <T1, T2, T3, T4, T5, T6, T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> of(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7) {
+			return new Tuple7($1, $2, $3, $4, $5, $6, $7);
+		}
+
+		/**
+		 * Factory method for creating Tuple8 instances.
+		 */
+		static <T1, T2, T3, T4, T5, T6, T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> of(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8) {
+			return new Tuple8($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		/**
+		 * Factory method for creating Tuple9 instances.
+		 */
+		static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> of(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9) {
+			return new Tuple9($1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		/**
+		 * Factory method for creating Tuple10 instances.
+		 */
+		static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> of(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9, T10 $10) {
+			return new Tuple10($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
 
 	}
 
@@ -93,6 +135,30 @@ public final class Tuples {
 
 		public <T3, T4> Tuple4<T1, T2, T3, T4> concat(Tuple2<T3, T4> other) {
 			return new Tuple4<>($1, $2, other.$1, other.$2);
+		}
+
+		public <T3, T4, T5> Tuple5<T1, T2, T3, T4, T5> concat(Tuple3<T3, T4, T5> other) {
+			return new Tuple5<>($1, $2, other.$1, other.$2, other.$3);
+		}
+
+		public <T3, T4, T5, T6> Tuple6<T1, T2, T3, T4, T5, T6> concat(Tuple4<T3, T4, T5, T6> other) {
+			return new Tuple6<>($1, $2, other.$1, other.$2, other.$3, other.$4);
+		}
+
+		public <T3, T4, T5, T6, T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> concat(Tuple5<T3, T4, T5, T6, T7> other) {
+			return new Tuple7<>($1, $2, other.$1, other.$2, other.$3, other.$4, other.$5);
+		}
+
+		public <T3, T4, T5, T6, T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> concat(Tuple6<T3, T4, T5, T6, T7, T8> other) {
+			return new Tuple8<>($1, $2, other.$1, other.$2, other.$3, other.$4, other.$5, other.$6);
+		}
+
+		public <T3, T4, T5, T6, T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> concat(Tuple7<T3, T4, T5, T6, T7, T8, T9> other) {
+			return new Tuple9<>($1, $2, other.$1, other.$2, other.$3, other.$4, other.$5, other.$6, other.$7);
+		}
+
+		public <T3, T4, T5, T6, T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple8<T3, T4, T5, T6, T7, T8, T9, T10> other) {
+			return new Tuple10<>($1, $2, other.$1, other.$2, other.$3, other.$4, other.$5, other.$6, other.$7, other.$8);
 		}
 
 
@@ -201,6 +267,30 @@ public final class Tuples {
 		}
 
 
+		public <T4, T5> Tuple5<T1, T2, T3, T4, T5> concat(Tuple2<T4, T5> other) {
+			return new Tuple5<>($1, $2, $3, other.$1, other.$2);
+		}
+
+		public <T4, T5, T6> Tuple6<T1, T2, T3, T4, T5, T6> concat(Tuple3<T4, T5, T6> other) {
+			return new Tuple6<>($1, $2, $3, other.$1, other.$2, other.$3);
+		}
+
+		public <T4, T5, T6, T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> concat(Tuple4<T4, T5, T6, T7> other) {
+			return new Tuple7<>($1, $2, $3, other.$1, other.$2, other.$3, other.$4);
+		}
+
+		public <T4, T5, T6, T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> concat(Tuple5<T4, T5, T6, T7, T8> other) {
+			return new Tuple8<>($1, $2, $3, other.$1, other.$2, other.$3, other.$4, other.$5);
+		}
+
+		public <T4, T5, T6, T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> concat(Tuple6<T4, T5, T6, T7, T8, T9> other) {
+			return new Tuple9<>($1, $2, $3, other.$1, other.$2, other.$3, other.$4, other.$5, other.$6);
+		}
+
+		public <T4, T5, T6, T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple7<T4, T5, T6, T7, T8, T9, T10> other) {
+			return new Tuple10<>($1, $2, $3, other.$1, other.$2, other.$3, other.$4, other.$5, other.$6, other.$7);
+		}
+
 
 		public <U> U map(Func3<T1, T2, T3, U> mapper) {
 			return mapper.call($1, $2, $3);
@@ -281,6 +371,13 @@ public final class Tuples {
 			this.$4 = $4;
 		}
 
+		public <T5> Tuple5<T1, T2, T3, T4, T5> append(T5 $5) {
+			return new Tuple5<>($1, $2, $3, $4, $5);
+		}
+
+		public <T0> Tuple5<T0, T1, T2, T3, T4> prepend (T0 $0) {
+			return new Tuple5<>($0, $1, $2, $3, $4);
+		}
 
 		public Tuple3<T2, T3, T4> skip1() {
 			return new Tuple3<>($2, $3, $4);
@@ -300,6 +397,18 @@ public final class Tuples {
 		}
 
 
+		public <U> Tuple5<T1, U, T2, T3, T4> insert2(U $) {
+			return new Tuple5<>($1, $, $2, $3, $4);
+		}
+
+		public <U> Tuple5<T1, T2, U, T3, T4> insert3(U $) {
+			return new Tuple5<>($1, $2, $, $3, $4);
+		}
+
+		public <U> Tuple5<T1, T2, T3, U, T4> insert4(U $) {
+			return new Tuple5<>($1, $2, $3, $, $4);
+		}
+
 
 		public Tuple3<T1, T3, T4> remove2() {
 			return new Tuple3<>($1, $3, $4);
@@ -309,6 +418,26 @@ public final class Tuples {
 			return new Tuple3<>($1, $2, $4);
 		}
 
+
+		public <T5, T6> Tuple6<T1, T2, T3, T4, T5, T6> concat(Tuple2<T5, T6> other) {
+			return new Tuple6<>($1, $2, $3, $4, other.$1, other.$2);
+		}
+
+		public <T5, T6, T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> concat(Tuple3<T5, T6, T7> other) {
+			return new Tuple7<>($1, $2, $3, $4, other.$1, other.$2, other.$3);
+		}
+
+		public <T5, T6, T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> concat(Tuple4<T5, T6, T7, T8> other) {
+			return new Tuple8<>($1, $2, $3, $4, other.$1, other.$2, other.$3, other.$4);
+		}
+
+		public <T5, T6, T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> concat(Tuple5<T5, T6, T7, T8, T9> other) {
+			return new Tuple9<>($1, $2, $3, $4, other.$1, other.$2, other.$3, other.$4, other.$5);
+		}
+
+		public <T5, T6, T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple6<T5, T6, T7, T8, T9, T10> other) {
+			return new Tuple10<>($1, $2, $3, $4, other.$1, other.$2, other.$3, other.$4, other.$5, other.$6);
+		}
 
 
 		public <U> U map(Func4<T1, T2, T3, T4, U> mapper) {
@@ -350,6 +479,1239 @@ public final class Tuples {
 		@Override
 		public int hashCode() {
 			return Objects.hash($1, $2, $3, $4);
+		}
+	}
+
+
+	/**
+	 * Tuple of arity 5.
+	 *
+	 * <p>Objects of this class are immutable.
+	 */
+	public static class Tuple5<T1, T2, T3, T4, T5> implements Tuple {
+
+		/**
+		 * Element #1 (1-based indexing)
+		 */
+		public final T1 $1;
+		/**
+		 * Element #2 (1-based indexing)
+		 */
+		public final T2 $2;
+		/**
+		 * Element #3 (1-based indexing)
+		 */
+		public final T3 $3;
+		/**
+		 * Element #4 (1-based indexing)
+		 */
+		public final T4 $4;
+		/**
+		 * Element #5 (1-based indexing)
+		 */
+		public final T5 $5;
+
+		/**
+		 * Creates a new instance.
+		 *
+		 * <p>See also Tuples.of() for more convenient Tuple creation
+		 * @see Tuple#of
+		 */
+		public Tuple5(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5) {
+			this.$1 = $1;
+			this.$2 = $2;
+			this.$3 = $3;
+			this.$4 = $4;
+			this.$5 = $5;
+		}
+
+		public <T6> Tuple6<T1, T2, T3, T4, T5, T6> append(T6 $6) {
+			return new Tuple6<>($1, $2, $3, $4, $5, $6);
+		}
+
+		public <T0> Tuple6<T0, T1, T2, T3, T4, T5> prepend (T0 $0) {
+			return new Tuple6<>($0, $1, $2, $3, $4, $5);
+		}
+
+		public Tuple4<T2, T3, T4, T5> skip1() {
+			return new Tuple4<>($2, $3, $4, $5);
+		}
+
+		public Tuple3<T3, T4, T5> skip2() {
+			return new Tuple3<>($3, $4, $5);
+		}
+
+		public Tuple2<T4, T5> skip3() {
+			return new Tuple2<>($4, $5);
+		}
+
+
+		public Tuple2<T1, T2> take2() {
+			return new Tuple2<>($1, $2);
+		}
+
+		public Tuple3<T1, T2, T3> take3() {
+			return new Tuple3<>($1, $2, $3);
+		}
+
+		public Tuple4<T1, T2, T3, T4> take4() {
+			return new Tuple4<>($1, $2, $3, $4);
+		}
+
+
+		public <U> Tuple6<T1, U, T2, T3, T4, T5> insert2(U $) {
+			return new Tuple6<>($1, $, $2, $3, $4, $5);
+		}
+
+		public <U> Tuple6<T1, T2, U, T3, T4, T5> insert3(U $) {
+			return new Tuple6<>($1, $2, $, $3, $4, $5);
+		}
+
+		public <U> Tuple6<T1, T2, T3, U, T4, T5> insert4(U $) {
+			return new Tuple6<>($1, $2, $3, $, $4, $5);
+		}
+
+		public <U> Tuple6<T1, T2, T3, T4, U, T5> insert5(U $) {
+			return new Tuple6<>($1, $2, $3, $4, $, $5);
+		}
+
+
+		public Tuple4<T1, T3, T4, T5> remove2() {
+			return new Tuple4<>($1, $3, $4, $5);
+		}
+
+		public Tuple4<T1, T2, T4, T5> remove3() {
+			return new Tuple4<>($1, $2, $4, $5);
+		}
+
+		public Tuple4<T1, T2, T3, T5> remove4() {
+			return new Tuple4<>($1, $2, $3, $5);
+		}
+
+
+		public <T6, T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> concat(Tuple2<T6, T7> other) {
+			return new Tuple7<>($1, $2, $3, $4, $5, other.$1, other.$2);
+		}
+
+		public <T6, T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> concat(Tuple3<T6, T7, T8> other) {
+			return new Tuple8<>($1, $2, $3, $4, $5, other.$1, other.$2, other.$3);
+		}
+
+		public <T6, T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> concat(Tuple4<T6, T7, T8, T9> other) {
+			return new Tuple9<>($1, $2, $3, $4, $5, other.$1, other.$2, other.$3, other.$4);
+		}
+
+		public <T6, T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple5<T6, T7, T8, T9, T10> other) {
+			return new Tuple10<>($1, $2, $3, $4, $5, other.$1, other.$2, other.$3, other.$4, other.$5);
+		}
+
+
+		public <U> U map(Func5<T1, T2, T3, T4, T5, U> mapper) {
+			return mapper.call($1, $2, $3, $4, $5);
+		}
+
+		public <U, E extends Throwable> U mapThrowing(Func5ThrowsT<T1, T2, T3, T4, T5, U, E> mapper) throws E {
+			return mapper.call($1, $2, $3, $4, $5);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T5> consume(Action5<T1, T2, T3, T4, T5> callable) {
+			callable.call($1, $2, $3, $4, $5);
+			return this;
+		}
+
+		public <E extends Throwable> Tuple5<T1, T2, T3, T4, T5> consumeThrowing(Action5ThrowsT<T1, T2, T3, T4, T5, E> callable) throws E {
+			callable.call($1, $2, $3, $4, $5);
+			return this;
+		}
+
+		@Override
+		public String toString() {
+			return "(" + $1 + ", " + $2 + ", " + $3 + ", " + $4 + ", " + $5 + ")";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) return true;
+			if(!(this instanceof Tuple5)) return false;
+			Tuple5<T1, T2, T3, T4, T5> other =
+				(Tuple5<T1, T2, T3, T4, T5>) obj;
+			if(!Objects.equals($1, other.$1)) return false;
+			if(!Objects.equals($2, other.$2)) return false;
+			if(!Objects.equals($3, other.$3)) return false;
+			if(!Objects.equals($4, other.$4)) return false;
+			if(!Objects.equals($5, other.$5)) return false;
+			return true;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash($1, $2, $3, $4, $5);
+		}
+	}
+
+
+	/**
+	 * Tuple of arity 6.
+	 *
+	 * <p>Objects of this class are immutable.
+	 */
+	public static class Tuple6<T1, T2, T3, T4, T5, T6> implements Tuple {
+
+		/**
+		 * Element #1 (1-based indexing)
+		 */
+		public final T1 $1;
+		/**
+		 * Element #2 (1-based indexing)
+		 */
+		public final T2 $2;
+		/**
+		 * Element #3 (1-based indexing)
+		 */
+		public final T3 $3;
+		/**
+		 * Element #4 (1-based indexing)
+		 */
+		public final T4 $4;
+		/**
+		 * Element #5 (1-based indexing)
+		 */
+		public final T5 $5;
+		/**
+		 * Element #6 (1-based indexing)
+		 */
+		public final T6 $6;
+
+		/**
+		 * Creates a new instance.
+		 *
+		 * <p>See also Tuples.of() for more convenient Tuple creation
+		 * @see Tuple#of
+		 */
+		public Tuple6(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6) {
+			this.$1 = $1;
+			this.$2 = $2;
+			this.$3 = $3;
+			this.$4 = $4;
+			this.$5 = $5;
+			this.$6 = $6;
+		}
+
+		public <T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> append(T7 $7) {
+			return new Tuple7<>($1, $2, $3, $4, $5, $6, $7);
+		}
+
+		public <T0> Tuple7<T0, T1, T2, T3, T4, T5, T6> prepend (T0 $0) {
+			return new Tuple7<>($0, $1, $2, $3, $4, $5, $6);
+		}
+
+		public Tuple5<T2, T3, T4, T5, T6> skip1() {
+			return new Tuple5<>($2, $3, $4, $5, $6);
+		}
+
+		public Tuple4<T3, T4, T5, T6> skip2() {
+			return new Tuple4<>($3, $4, $5, $6);
+		}
+
+		public Tuple3<T4, T5, T6> skip3() {
+			return new Tuple3<>($4, $5, $6);
+		}
+
+		public Tuple2<T5, T6> skip4() {
+			return new Tuple2<>($5, $6);
+		}
+
+
+		public Tuple2<T1, T2> take2() {
+			return new Tuple2<>($1, $2);
+		}
+
+		public Tuple3<T1, T2, T3> take3() {
+			return new Tuple3<>($1, $2, $3);
+		}
+
+		public Tuple4<T1, T2, T3, T4> take4() {
+			return new Tuple4<>($1, $2, $3, $4);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T5> take5() {
+			return new Tuple5<>($1, $2, $3, $4, $5);
+		}
+
+
+		public <U> Tuple7<T1, U, T2, T3, T4, T5, T6> insert2(U $) {
+			return new Tuple7<>($1, $, $2, $3, $4, $5, $6);
+		}
+
+		public <U> Tuple7<T1, T2, U, T3, T4, T5, T6> insert3(U $) {
+			return new Tuple7<>($1, $2, $, $3, $4, $5, $6);
+		}
+
+		public <U> Tuple7<T1, T2, T3, U, T4, T5, T6> insert4(U $) {
+			return new Tuple7<>($1, $2, $3, $, $4, $5, $6);
+		}
+
+		public <U> Tuple7<T1, T2, T3, T4, U, T5, T6> insert5(U $) {
+			return new Tuple7<>($1, $2, $3, $4, $, $5, $6);
+		}
+
+		public <U> Tuple7<T1, T2, T3, T4, T5, U, T6> insert6(U $) {
+			return new Tuple7<>($1, $2, $3, $4, $5, $, $6);
+		}
+
+
+		public Tuple5<T1, T3, T4, T5, T6> remove2() {
+			return new Tuple5<>($1, $3, $4, $5, $6);
+		}
+
+		public Tuple5<T1, T2, T4, T5, T6> remove3() {
+			return new Tuple5<>($1, $2, $4, $5, $6);
+		}
+
+		public Tuple5<T1, T2, T3, T5, T6> remove4() {
+			return new Tuple5<>($1, $2, $3, $5, $6);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T6> remove5() {
+			return new Tuple5<>($1, $2, $3, $4, $6);
+		}
+
+
+		public <T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> concat(Tuple2<T7, T8> other) {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, other.$1, other.$2);
+		}
+
+		public <T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> concat(Tuple3<T7, T8, T9> other) {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, other.$1, other.$2, other.$3);
+		}
+
+		public <T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple4<T7, T8, T9, T10> other) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, other.$1, other.$2, other.$3, other.$4);
+		}
+
+
+		public <U> U map(Func6<T1, T2, T3, T4, T5, T6, U> mapper) {
+			return mapper.call($1, $2, $3, $4, $5, $6);
+		}
+
+		public <U, E extends Throwable> U mapThrowing(Func6ThrowsT<T1, T2, T3, T4, T5, T6, U, E> mapper) throws E {
+			return mapper.call($1, $2, $3, $4, $5, $6);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T5, T6> consume(Action6<T1, T2, T3, T4, T5, T6> callable) {
+			callable.call($1, $2, $3, $4, $5, $6);
+			return this;
+		}
+
+		public <E extends Throwable> Tuple6<T1, T2, T3, T4, T5, T6> consumeThrowing(Action6ThrowsT<T1, T2, T3, T4, T5, T6, E> callable) throws E {
+			callable.call($1, $2, $3, $4, $5, $6);
+			return this;
+		}
+
+		@Override
+		public String toString() {
+			return "(" + $1 + ", " + $2 + ", " + $3 + ", " + $4 + ", " + $5 + ", " + $6 + ")";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) return true;
+			if(!(this instanceof Tuple6)) return false;
+			Tuple6<T1, T2, T3, T4, T5, T6> other =
+				(Tuple6<T1, T2, T3, T4, T5, T6>) obj;
+			if(!Objects.equals($1, other.$1)) return false;
+			if(!Objects.equals($2, other.$2)) return false;
+			if(!Objects.equals($3, other.$3)) return false;
+			if(!Objects.equals($4, other.$4)) return false;
+			if(!Objects.equals($5, other.$5)) return false;
+			if(!Objects.equals($6, other.$6)) return false;
+			return true;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash($1, $2, $3, $4, $5, $6);
+		}
+	}
+
+
+	/**
+	 * Tuple of arity 7.
+	 *
+	 * <p>Objects of this class are immutable.
+	 */
+	public static class Tuple7<T1, T2, T3, T4, T5, T6, T7> implements Tuple {
+
+		/**
+		 * Element #1 (1-based indexing)
+		 */
+		public final T1 $1;
+		/**
+		 * Element #2 (1-based indexing)
+		 */
+		public final T2 $2;
+		/**
+		 * Element #3 (1-based indexing)
+		 */
+		public final T3 $3;
+		/**
+		 * Element #4 (1-based indexing)
+		 */
+		public final T4 $4;
+		/**
+		 * Element #5 (1-based indexing)
+		 */
+		public final T5 $5;
+		/**
+		 * Element #6 (1-based indexing)
+		 */
+		public final T6 $6;
+		/**
+		 * Element #7 (1-based indexing)
+		 */
+		public final T7 $7;
+
+		/**
+		 * Creates a new instance.
+		 *
+		 * <p>See also Tuples.of() for more convenient Tuple creation
+		 * @see Tuple#of
+		 */
+		public Tuple7(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7) {
+			this.$1 = $1;
+			this.$2 = $2;
+			this.$3 = $3;
+			this.$4 = $4;
+			this.$5 = $5;
+			this.$6 = $6;
+			this.$7 = $7;
+		}
+
+		public <T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> append(T8 $8) {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public <T0> Tuple8<T0, T1, T2, T3, T4, T5, T6, T7> prepend (T0 $0) {
+			return new Tuple8<>($0, $1, $2, $3, $4, $5, $6, $7);
+		}
+
+		public Tuple6<T2, T3, T4, T5, T6, T7> skip1() {
+			return new Tuple6<>($2, $3, $4, $5, $6, $7);
+		}
+
+		public Tuple5<T3, T4, T5, T6, T7> skip2() {
+			return new Tuple5<>($3, $4, $5, $6, $7);
+		}
+
+		public Tuple4<T4, T5, T6, T7> skip3() {
+			return new Tuple4<>($4, $5, $6, $7);
+		}
+
+		public Tuple3<T5, T6, T7> skip4() {
+			return new Tuple3<>($5, $6, $7);
+		}
+
+		public Tuple2<T6, T7> skip5() {
+			return new Tuple2<>($6, $7);
+		}
+
+
+		public Tuple2<T1, T2> take2() {
+			return new Tuple2<>($1, $2);
+		}
+
+		public Tuple3<T1, T2, T3> take3() {
+			return new Tuple3<>($1, $2, $3);
+		}
+
+		public Tuple4<T1, T2, T3, T4> take4() {
+			return new Tuple4<>($1, $2, $3, $4);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T5> take5() {
+			return new Tuple5<>($1, $2, $3, $4, $5);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T5, T6> take6() {
+			return new Tuple6<>($1, $2, $3, $4, $5, $6);
+		}
+
+
+		public <U> Tuple8<T1, U, T2, T3, T4, T5, T6, T7> insert2(U $) {
+			return new Tuple8<>($1, $, $2, $3, $4, $5, $6, $7);
+		}
+
+		public <U> Tuple8<T1, T2, U, T3, T4, T5, T6, T7> insert3(U $) {
+			return new Tuple8<>($1, $2, $, $3, $4, $5, $6, $7);
+		}
+
+		public <U> Tuple8<T1, T2, T3, U, T4, T5, T6, T7> insert4(U $) {
+			return new Tuple8<>($1, $2, $3, $, $4, $5, $6, $7);
+		}
+
+		public <U> Tuple8<T1, T2, T3, T4, U, T5, T6, T7> insert5(U $) {
+			return new Tuple8<>($1, $2, $3, $4, $, $5, $6, $7);
+		}
+
+		public <U> Tuple8<T1, T2, T3, T4, T5, U, T6, T7> insert6(U $) {
+			return new Tuple8<>($1, $2, $3, $4, $5, $, $6, $7);
+		}
+
+		public <U> Tuple8<T1, T2, T3, T4, T5, T6, U, T7> insert7(U $) {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, $, $7);
+		}
+
+
+		public Tuple6<T1, T3, T4, T5, T6, T7> remove2() {
+			return new Tuple6<>($1, $3, $4, $5, $6, $7);
+		}
+
+		public Tuple6<T1, T2, T4, T5, T6, T7> remove3() {
+			return new Tuple6<>($1, $2, $4, $5, $6, $7);
+		}
+
+		public Tuple6<T1, T2, T3, T5, T6, T7> remove4() {
+			return new Tuple6<>($1, $2, $3, $5, $6, $7);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T6, T7> remove5() {
+			return new Tuple6<>($1, $2, $3, $4, $6, $7);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T5, T7> remove6() {
+			return new Tuple6<>($1, $2, $3, $4, $5, $7);
+		}
+
+
+		public <T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> concat(Tuple2<T8, T9> other) {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $7, other.$1, other.$2);
+		}
+
+		public <T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple3<T8, T9, T10> other) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, $7, other.$1, other.$2, other.$3);
+		}
+
+
+		public <U> U map(Func7<T1, T2, T3, T4, T5, T6, T7, U> mapper) {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7);
+		}
+
+		public <U, E extends Throwable> U mapThrowing(Func7ThrowsT<T1, T2, T3, T4, T5, T6, T7, U, E> mapper) throws E {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T5, T6, T7> consume(Action7<T1, T2, T3, T4, T5, T6, T7> callable) {
+			callable.call($1, $2, $3, $4, $5, $6, $7);
+			return this;
+		}
+
+		public <E extends Throwable> Tuple7<T1, T2, T3, T4, T5, T6, T7> consumeThrowing(Action7ThrowsT<T1, T2, T3, T4, T5, T6, T7, E> callable) throws E {
+			callable.call($1, $2, $3, $4, $5, $6, $7);
+			return this;
+		}
+
+		@Override
+		public String toString() {
+			return "(" + $1 + ", " + $2 + ", " + $3 + ", " + $4 + ", " + $5 + ", " + $6 + ", " + $7 + ")";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) return true;
+			if(!(this instanceof Tuple7)) return false;
+			Tuple7<T1, T2, T3, T4, T5, T6, T7> other =
+				(Tuple7<T1, T2, T3, T4, T5, T6, T7>) obj;
+			if(!Objects.equals($1, other.$1)) return false;
+			if(!Objects.equals($2, other.$2)) return false;
+			if(!Objects.equals($3, other.$3)) return false;
+			if(!Objects.equals($4, other.$4)) return false;
+			if(!Objects.equals($5, other.$5)) return false;
+			if(!Objects.equals($6, other.$6)) return false;
+			if(!Objects.equals($7, other.$7)) return false;
+			return true;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash($1, $2, $3, $4, $5, $6, $7);
+		}
+	}
+
+
+	/**
+	 * Tuple of arity 8.
+	 *
+	 * <p>Objects of this class are immutable.
+	 */
+	public static class Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> implements Tuple {
+
+		/**
+		 * Element #1 (1-based indexing)
+		 */
+		public final T1 $1;
+		/**
+		 * Element #2 (1-based indexing)
+		 */
+		public final T2 $2;
+		/**
+		 * Element #3 (1-based indexing)
+		 */
+		public final T3 $3;
+		/**
+		 * Element #4 (1-based indexing)
+		 */
+		public final T4 $4;
+		/**
+		 * Element #5 (1-based indexing)
+		 */
+		public final T5 $5;
+		/**
+		 * Element #6 (1-based indexing)
+		 */
+		public final T6 $6;
+		/**
+		 * Element #7 (1-based indexing)
+		 */
+		public final T7 $7;
+		/**
+		 * Element #8 (1-based indexing)
+		 */
+		public final T8 $8;
+
+		/**
+		 * Creates a new instance.
+		 *
+		 * <p>See also Tuples.of() for more convenient Tuple creation
+		 * @see Tuple#of
+		 */
+		public Tuple8(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8) {
+			this.$1 = $1;
+			this.$2 = $2;
+			this.$3 = $3;
+			this.$4 = $4;
+			this.$5 = $5;
+			this.$6 = $6;
+			this.$7 = $7;
+			this.$8 = $8;
+		}
+
+		public <T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> append(T9 $9) {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public <T0> Tuple9<T0, T1, T2, T3, T4, T5, T6, T7, T8> prepend (T0 $0) {
+			return new Tuple9<>($0, $1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple7<T2, T3, T4, T5, T6, T7, T8> skip1() {
+			return new Tuple7<>($2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple6<T3, T4, T5, T6, T7, T8> skip2() {
+			return new Tuple6<>($3, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple5<T4, T5, T6, T7, T8> skip3() {
+			return new Tuple5<>($4, $5, $6, $7, $8);
+		}
+
+		public Tuple4<T5, T6, T7, T8> skip4() {
+			return new Tuple4<>($5, $6, $7, $8);
+		}
+
+		public Tuple3<T6, T7, T8> skip5() {
+			return new Tuple3<>($6, $7, $8);
+		}
+
+		public Tuple2<T7, T8> skip6() {
+			return new Tuple2<>($7, $8);
+		}
+
+
+		public Tuple2<T1, T2> take2() {
+			return new Tuple2<>($1, $2);
+		}
+
+		public Tuple3<T1, T2, T3> take3() {
+			return new Tuple3<>($1, $2, $3);
+		}
+
+		public Tuple4<T1, T2, T3, T4> take4() {
+			return new Tuple4<>($1, $2, $3, $4);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T5> take5() {
+			return new Tuple5<>($1, $2, $3, $4, $5);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T5, T6> take6() {
+			return new Tuple6<>($1, $2, $3, $4, $5, $6);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T5, T6, T7> take7() {
+			return new Tuple7<>($1, $2, $3, $4, $5, $6, $7);
+		}
+
+
+		public <U> Tuple9<T1, U, T2, T3, T4, T5, T6, T7, T8> insert2(U $) {
+			return new Tuple9<>($1, $, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public <U> Tuple9<T1, T2, U, T3, T4, T5, T6, T7, T8> insert3(U $) {
+			return new Tuple9<>($1, $2, $, $3, $4, $5, $6, $7, $8);
+		}
+
+		public <U> Tuple9<T1, T2, T3, U, T4, T5, T6, T7, T8> insert4(U $) {
+			return new Tuple9<>($1, $2, $3, $, $4, $5, $6, $7, $8);
+		}
+
+		public <U> Tuple9<T1, T2, T3, T4, U, T5, T6, T7, T8> insert5(U $) {
+			return new Tuple9<>($1, $2, $3, $4, $, $5, $6, $7, $8);
+		}
+
+		public <U> Tuple9<T1, T2, T3, T4, T5, U, T6, T7, T8> insert6(U $) {
+			return new Tuple9<>($1, $2, $3, $4, $5, $, $6, $7, $8);
+		}
+
+		public <U> Tuple9<T1, T2, T3, T4, T5, T6, U, T7, T8> insert7(U $) {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $, $7, $8);
+		}
+
+		public <U> Tuple9<T1, T2, T3, T4, T5, T6, T7, U, T8> insert8(U $) {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $7, $, $8);
+		}
+
+
+		public Tuple7<T1, T3, T4, T5, T6, T7, T8> remove2() {
+			return new Tuple7<>($1, $3, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple7<T1, T2, T4, T5, T6, T7, T8> remove3() {
+			return new Tuple7<>($1, $2, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple7<T1, T2, T3, T5, T6, T7, T8> remove4() {
+			return new Tuple7<>($1, $2, $3, $5, $6, $7, $8);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T6, T7, T8> remove5() {
+			return new Tuple7<>($1, $2, $3, $4, $6, $7, $8);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T5, T7, T8> remove6() {
+			return new Tuple7<>($1, $2, $3, $4, $5, $7, $8);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T5, T6, T8> remove7() {
+			return new Tuple7<>($1, $2, $3, $4, $5, $6, $8);
+		}
+
+
+		public <T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> concat(Tuple2<T9, T10> other) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, $7, $8, other.$1, other.$2);
+		}
+
+
+		public <U> U map(Func8<T1, T2, T3, T4, T5, T6, T7, T8, U> mapper) {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public <U, E extends Throwable> U mapThrowing(Func8ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, U, E> mapper) throws E {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> consume(Action8<T1, T2, T3, T4, T5, T6, T7, T8> callable) {
+			callable.call($1, $2, $3, $4, $5, $6, $7, $8);
+			return this;
+		}
+
+		public <E extends Throwable> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> consumeThrowing(Action8ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, E> callable) throws E {
+			callable.call($1, $2, $3, $4, $5, $6, $7, $8);
+			return this;
+		}
+
+		@Override
+		public String toString() {
+			return "(" + $1 + ", " + $2 + ", " + $3 + ", " + $4 + ", " + $5 + ", " + $6 + ", " + $7 + ", " + $8 + ")";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) return true;
+			if(!(this instanceof Tuple8)) return false;
+			Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> other =
+				(Tuple8<T1, T2, T3, T4, T5, T6, T7, T8>) obj;
+			if(!Objects.equals($1, other.$1)) return false;
+			if(!Objects.equals($2, other.$2)) return false;
+			if(!Objects.equals($3, other.$3)) return false;
+			if(!Objects.equals($4, other.$4)) return false;
+			if(!Objects.equals($5, other.$5)) return false;
+			if(!Objects.equals($6, other.$6)) return false;
+			if(!Objects.equals($7, other.$7)) return false;
+			if(!Objects.equals($8, other.$8)) return false;
+			return true;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+	}
+
+
+	/**
+	 * Tuple of arity 9.
+	 *
+	 * <p>Objects of this class are immutable.
+	 */
+	public static class Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> implements Tuple {
+
+		/**
+		 * Element #1 (1-based indexing)
+		 */
+		public final T1 $1;
+		/**
+		 * Element #2 (1-based indexing)
+		 */
+		public final T2 $2;
+		/**
+		 * Element #3 (1-based indexing)
+		 */
+		public final T3 $3;
+		/**
+		 * Element #4 (1-based indexing)
+		 */
+		public final T4 $4;
+		/**
+		 * Element #5 (1-based indexing)
+		 */
+		public final T5 $5;
+		/**
+		 * Element #6 (1-based indexing)
+		 */
+		public final T6 $6;
+		/**
+		 * Element #7 (1-based indexing)
+		 */
+		public final T7 $7;
+		/**
+		 * Element #8 (1-based indexing)
+		 */
+		public final T8 $8;
+		/**
+		 * Element #9 (1-based indexing)
+		 */
+		public final T9 $9;
+
+		/**
+		 * Creates a new instance.
+		 *
+		 * <p>See also Tuples.of() for more convenient Tuple creation
+		 * @see Tuple#of
+		 */
+		public Tuple9(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9) {
+			this.$1 = $1;
+			this.$2 = $2;
+			this.$3 = $3;
+			this.$4 = $4;
+			this.$5 = $5;
+			this.$6 = $6;
+			this.$7 = $7;
+			this.$8 = $8;
+			this.$9 = $9;
+		}
+
+		public <T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> append(T10 $10) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public <T0> Tuple10<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> prepend (T0 $0) {
+			return new Tuple10<>($0, $1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple8<T2, T3, T4, T5, T6, T7, T8, T9> skip1() {
+			return new Tuple8<>($2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple7<T3, T4, T5, T6, T7, T8, T9> skip2() {
+			return new Tuple7<>($3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple6<T4, T5, T6, T7, T8, T9> skip3() {
+			return new Tuple6<>($4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple5<T5, T6, T7, T8, T9> skip4() {
+			return new Tuple5<>($5, $6, $7, $8, $9);
+		}
+
+		public Tuple4<T6, T7, T8, T9> skip5() {
+			return new Tuple4<>($6, $7, $8, $9);
+		}
+
+		public Tuple3<T7, T8, T9> skip6() {
+			return new Tuple3<>($7, $8, $9);
+		}
+
+		public Tuple2<T8, T9> skip7() {
+			return new Tuple2<>($8, $9);
+		}
+
+
+		public Tuple2<T1, T2> take2() {
+			return new Tuple2<>($1, $2);
+		}
+
+		public Tuple3<T1, T2, T3> take3() {
+			return new Tuple3<>($1, $2, $3);
+		}
+
+		public Tuple4<T1, T2, T3, T4> take4() {
+			return new Tuple4<>($1, $2, $3, $4);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T5> take5() {
+			return new Tuple5<>($1, $2, $3, $4, $5);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T5, T6> take6() {
+			return new Tuple6<>($1, $2, $3, $4, $5, $6);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T5, T6, T7> take7() {
+			return new Tuple7<>($1, $2, $3, $4, $5, $6, $7);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> take8() {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+
+		public <U> Tuple10<T1, U, T2, T3, T4, T5, T6, T7, T8, T9> insert2(U $) {
+			return new Tuple10<>($1, $, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, U, T3, T4, T5, T6, T7, T8, T9> insert3(U $) {
+			return new Tuple10<>($1, $2, $, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, T3, U, T4, T5, T6, T7, T8, T9> insert4(U $) {
+			return new Tuple10<>($1, $2, $3, $, $4, $5, $6, $7, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, T3, T4, U, T5, T6, T7, T8, T9> insert5(U $) {
+			return new Tuple10<>($1, $2, $3, $4, $, $5, $6, $7, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, T3, T4, T5, U, T6, T7, T8, T9> insert6(U $) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $, $6, $7, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, T3, T4, T5, T6, U, T7, T8, T9> insert7(U $) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, $, $7, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, T3, T4, T5, T6, T7, U, T8, T9> insert8(U $) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, $7, $, $8, $9);
+		}
+
+		public <U> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, U, T9> insert9(U $) {
+			return new Tuple10<>($1, $2, $3, $4, $5, $6, $7, $8, $, $9);
+		}
+
+
+		public Tuple8<T1, T3, T4, T5, T6, T7, T8, T9> remove2() {
+			return new Tuple8<>($1, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple8<T1, T2, T4, T5, T6, T7, T8, T9> remove3() {
+			return new Tuple8<>($1, $2, $4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple8<T1, T2, T3, T5, T6, T7, T8, T9> remove4() {
+			return new Tuple8<>($1, $2, $3, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T6, T7, T8, T9> remove5() {
+			return new Tuple8<>($1, $2, $3, $4, $6, $7, $8, $9);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T5, T7, T8, T9> remove6() {
+			return new Tuple8<>($1, $2, $3, $4, $5, $7, $8, $9);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T5, T6, T8, T9> remove7() {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, $8, $9);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T5, T6, T7, T9> remove8() {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, $7, $9);
+		}
+
+
+
+		public <U> U map(Func9<T1, T2, T3, T4, T5, T6, T7, T8, T9, U> mapper) {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public <U, E extends Throwable> U mapThrowing(Func9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, U, E> mapper) throws E {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> consume(Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9> callable) {
+			callable.call($1, $2, $3, $4, $5, $6, $7, $8, $9);
+			return this;
+		}
+
+		public <E extends Throwable> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> consumeThrowing(Action9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, E> callable) throws E {
+			callable.call($1, $2, $3, $4, $5, $6, $7, $8, $9);
+			return this;
+		}
+
+		@Override
+		public String toString() {
+			return "(" + $1 + ", " + $2 + ", " + $3 + ", " + $4 + ", " + $5 + ", " + $6 + ", " + $7 + ", " + $8 + ", " + $9 + ")";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) return true;
+			if(!(this instanceof Tuple9)) return false;
+			Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> other =
+				(Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9>) obj;
+			if(!Objects.equals($1, other.$1)) return false;
+			if(!Objects.equals($2, other.$2)) return false;
+			if(!Objects.equals($3, other.$3)) return false;
+			if(!Objects.equals($4, other.$4)) return false;
+			if(!Objects.equals($5, other.$5)) return false;
+			if(!Objects.equals($6, other.$6)) return false;
+			if(!Objects.equals($7, other.$7)) return false;
+			if(!Objects.equals($8, other.$8)) return false;
+			if(!Objects.equals($9, other.$9)) return false;
+			return true;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash($1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+	}
+
+
+	/**
+	 * Tuple of arity 10.
+	 *
+	 * <p>Objects of this class are immutable.
+	 */
+	public static class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> implements Tuple {
+
+		/**
+		 * Element #1 (1-based indexing)
+		 */
+		public final T1 $1;
+		/**
+		 * Element #2 (1-based indexing)
+		 */
+		public final T2 $2;
+		/**
+		 * Element #3 (1-based indexing)
+		 */
+		public final T3 $3;
+		/**
+		 * Element #4 (1-based indexing)
+		 */
+		public final T4 $4;
+		/**
+		 * Element #5 (1-based indexing)
+		 */
+		public final T5 $5;
+		/**
+		 * Element #6 (1-based indexing)
+		 */
+		public final T6 $6;
+		/**
+		 * Element #7 (1-based indexing)
+		 */
+		public final T7 $7;
+		/**
+		 * Element #8 (1-based indexing)
+		 */
+		public final T8 $8;
+		/**
+		 * Element #9 (1-based indexing)
+		 */
+		public final T9 $9;
+		/**
+		 * Element #10 (1-based indexing)
+		 */
+		public final T10 $10;
+
+		/**
+		 * Creates a new instance.
+		 *
+		 * <p>See also Tuples.of() for more convenient Tuple creation
+		 * @see Tuple#of
+		 */
+		public Tuple10(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9, T10 $10) {
+			this.$1 = $1;
+			this.$2 = $2;
+			this.$3 = $3;
+			this.$4 = $4;
+			this.$5 = $5;
+			this.$6 = $6;
+			this.$7 = $7;
+			this.$8 = $8;
+			this.$9 = $9;
+			this.$10 = $10;
+		}
+
+
+		public Tuple9<T2, T3, T4, T5, T6, T7, T8, T9, T10> skip1() {
+			return new Tuple9<>($2, $3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple8<T3, T4, T5, T6, T7, T8, T9, T10> skip2() {
+			return new Tuple8<>($3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple7<T4, T5, T6, T7, T8, T9, T10> skip3() {
+			return new Tuple7<>($4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple6<T5, T6, T7, T8, T9, T10> skip4() {
+			return new Tuple6<>($5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple5<T6, T7, T8, T9, T10> skip5() {
+			return new Tuple5<>($6, $7, $8, $9, $10);
+		}
+
+		public Tuple4<T7, T8, T9, T10> skip6() {
+			return new Tuple4<>($7, $8, $9, $10);
+		}
+
+		public Tuple3<T8, T9, T10> skip7() {
+			return new Tuple3<>($8, $9, $10);
+		}
+
+		public Tuple2<T9, T10> skip8() {
+			return new Tuple2<>($9, $10);
+		}
+
+
+		public Tuple2<T1, T2> take2() {
+			return new Tuple2<>($1, $2);
+		}
+
+		public Tuple3<T1, T2, T3> take3() {
+			return new Tuple3<>($1, $2, $3);
+		}
+
+		public Tuple4<T1, T2, T3, T4> take4() {
+			return new Tuple4<>($1, $2, $3, $4);
+		}
+
+		public Tuple5<T1, T2, T3, T4, T5> take5() {
+			return new Tuple5<>($1, $2, $3, $4, $5);
+		}
+
+		public Tuple6<T1, T2, T3, T4, T5, T6> take6() {
+			return new Tuple6<>($1, $2, $3, $4, $5, $6);
+		}
+
+		public Tuple7<T1, T2, T3, T4, T5, T6, T7> take7() {
+			return new Tuple7<>($1, $2, $3, $4, $5, $6, $7);
+		}
+
+		public Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> take8() {
+			return new Tuple8<>($1, $2, $3, $4, $5, $6, $7, $8);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> take9() {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $7, $8, $9);
+		}
+
+
+
+		public Tuple9<T1, T3, T4, T5, T6, T7, T8, T9, T10> remove2() {
+			return new Tuple9<>($1, $3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T4, T5, T6, T7, T8, T9, T10> remove3() {
+			return new Tuple9<>($1, $2, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T3, T5, T6, T7, T8, T9, T10> remove4() {
+			return new Tuple9<>($1, $2, $3, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T6, T7, T8, T9, T10> remove5() {
+			return new Tuple9<>($1, $2, $3, $4, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T5, T7, T8, T9, T10> remove6() {
+			return new Tuple9<>($1, $2, $3, $4, $5, $7, $8, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T5, T6, T8, T9, T10> remove7() {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $8, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T5, T6, T7, T9, T10> remove8() {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $7, $9, $10);
+		}
+
+		public Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T10> remove9() {
+			return new Tuple9<>($1, $2, $3, $4, $5, $6, $7, $8, $10);
+		}
+
+
+
+		public <U> U map(Func10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, U> mapper) {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public <U, E extends Throwable> U mapThrowing(Func10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, U, E> mapper) throws E {
+			return mapper.call($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+		}
+
+		public Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> consume(Action10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> callable) {
+			callable.call($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+			return this;
+		}
+
+		public <E extends Throwable> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> consumeThrowing(Action10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, E> callable) throws E {
+			callable.call($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+			return this;
+		}
+
+		@Override
+		public String toString() {
+			return "(" + $1 + ", " + $2 + ", " + $3 + ", " + $4 + ", " + $5 + ", " + $6 + ", " + $7 + ", " + $8 + ", " + $9 + ", " + $10 + ")";
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if(this == obj) return true;
+			if(!(this instanceof Tuple10)) return false;
+			Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> other =
+				(Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>) obj;
+			if(!Objects.equals($1, other.$1)) return false;
+			if(!Objects.equals($2, other.$2)) return false;
+			if(!Objects.equals($3, other.$3)) return false;
+			if(!Objects.equals($4, other.$4)) return false;
+			if(!Objects.equals($5, other.$5)) return false;
+			if(!Objects.equals($6, other.$6)) return false;
+			if(!Objects.equals($7, other.$7)) return false;
+			if(!Objects.equals($8, other.$8)) return false;
+			if(!Objects.equals($9, other.$9)) return false;
+			if(!Objects.equals($10, other.$10)) return false;
+			return true;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
 		}
 	}
 

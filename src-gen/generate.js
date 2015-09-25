@@ -11,7 +11,7 @@ for(var helper in helpers) {
 
 function range(s, e) { var r = []; for(var i=s; i<=e; i++) r.push(i); return r; }
 
-var maxLength = 4;
+var maxLength = 10;
 
 function createTuple(arity) {
   var t = {}
@@ -51,7 +51,7 @@ params.exceptions = [
   { name: "UnsupportedOperation", cause: true, package: false }
 ];
 
-params.arities = range(0, 8)
+params.arities = range(0, maxLength)
 params.maxLength = maxLength
 params.functions = range(1, params.maxLength).map(function(i) { return { arity: i, args: range(1, i) } })
 

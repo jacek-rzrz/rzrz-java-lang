@@ -513,4 +513,116 @@ public final class Functions {
 	{
 
 	}
+
+	/*
+	 * 9-argument functions
+	 */
+
+
+	public interface Func9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult, TError extends Throwable> {
+
+		TResult call(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9) throws TError;
+	}
+
+	public interface Func9ThrowsE<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>
+		extends Func9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult, Exception>
+	{
+
+	}
+
+	public interface Func9<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>
+		extends Func9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult, RuntimeException>
+	{
+
+	}
+
+	public interface Action9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, TError extends Throwable> {
+
+		void call(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9) throws TError;
+	}
+
+	public interface Action9ThrowsE<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+		extends Action9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, Exception>
+	{
+
+	}
+
+	public interface Action9<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+		extends Action9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, RuntimeException>
+	{
+
+	}
+
+	public interface Predicate9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, TError extends Throwable> {
+
+		boolean call(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9) throws TError;
+	}
+
+	public interface Predicate9ThrowsE<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+		extends Predicate9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, Exception>
+	{
+
+	}
+
+	public interface Predicate9<T1, T2, T3, T4, T5, T6, T7, T8, T9>
+		extends Predicate9ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, RuntimeException>
+	{
+
+	}
+
+	/*
+	 * 10-argument functions
+	 */
+
+
+	public interface Func10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult, TError extends Throwable> {
+
+		TResult call(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9, T10 $10) throws TError;
+	}
+
+	public interface Func10ThrowsE<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>
+		extends Func10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult, Exception>
+	{
+
+	}
+
+	public interface Func10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>
+		extends Func10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult, RuntimeException>
+	{
+
+	}
+
+	public interface Action10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TError extends Throwable> {
+
+		void call(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9, T10 $10) throws TError;
+	}
+
+	public interface Action10ThrowsE<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+		extends Action10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Exception>
+	{
+
+	}
+
+	public interface Action10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+		extends Action10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, RuntimeException>
+	{
+
+	}
+
+	public interface Predicate10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TError extends Throwable> {
+
+		boolean call(T1 $1, T2 $2, T3 $3, T4 $4, T5 $5, T6 $6, T7 $7, T8 $8, T9 $9, T10 $10) throws TError;
+	}
+
+	public interface Predicate10ThrowsE<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+		extends Predicate10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, Exception>
+	{
+
+	}
+
+	public interface Predicate10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
+		extends Predicate10ThrowsT<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, RuntimeException>
+	{
+
+	}
 }

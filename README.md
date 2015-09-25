@@ -18,3 +18,7 @@ TODO: brief description with examples
 
 ## Try
 TODO: brief description with examples
+
+
+# Status
+[![Build Status](https://travis-ci.org/jacek-rzrz/rzrz-java-lang.svg?branch=master)](https://travis-ci.org/jacek-rzrz/rzrz-java-lang)

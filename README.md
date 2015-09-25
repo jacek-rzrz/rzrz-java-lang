@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jacek-rzrz/rzrz-java-lang.svg?branch=master)](https://travis-ci.org/jacek-rzrz/rzrz-java-lang)
+
 # rzrz-java-lang
 Zero-dependency library providing language utilities:
 convenient exception constructors, a Try class, tuples.
@@ -20,5 +22,21 @@ TODO: brief description with examples
 TODO: brief description with examples
 
 
-# Status
-[![Build Status](https://travis-ci.org/jacek-rzrz/rzrz-java-lang.svg?branch=master)](https://travis-ci.org/jacek-rzrz/rzrz-java-lang)
+# Binaries
+Snapshots built from `master` branch are available from Sonatype OSSRH:
+
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <name>Sonatype OSSRH</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>pl.rzrz</groupId>
+            <artifactId>java-lang</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
